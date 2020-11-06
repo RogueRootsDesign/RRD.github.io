@@ -1,0 +1,27 @@
+@charset "utf8";
+
+* {
+    box-sizing: border-box;
+}
+
+.clock {
+    position: relative;
+    background-color: #191818;
+    width: 10rem;
+    height: 10rem;
+    border: 10px solid #0084ae;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.hand {
+    width: 50%;
+    height: 5px;
+    background: #f37158;
+    position: absolute;
+    top: 49%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(.06, 3.62, .58, 1);
+    border-radius: 4px;
+}

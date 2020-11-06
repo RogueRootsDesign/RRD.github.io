@@ -1,0 +1,131 @@
+/* 
+Rogue Roots Photography
+Landing Page
+   Author: Christopher Parrish
+   Date: 01/15/2020 
+Typefaces: 
+    Display = "Shackleton", Georgia, serif
+    Body copy = 
+        "Roboto", Arial, sans-serif
+Color Pallette: 
+    Highlight colors = 
+        "Coral Reef" #f37158 
+        "Bright Ocean" #0084ae
+    Background colors = 
+        "Sea Shell" #f3e8d0
+        "Black Sand" #191818
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: block;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: #f3e8d0;
+}
+
+p {
+    color: #191818;
+    font-size: 3vw;
+    font-family: "Shackleton", Georgia, serif;
+}
+
+.gallery {
+    background-color: #f3e8d0;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(30, 5vw);
+    grid-gap: 1.5vw;
+}
+
+.galleryImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .galleryImage:hover {
+    opacity: .65;
+} */
+
+.galleryItem1 {
+    grid-area: 1/1/10/4;
+}
+
+.galleryItem2 {
+    grid-area: 1/4/7/7;
+}
+
+.galleryItem3 {
+    grid-area: 1/7/10/10;
+}
+
+.galleryItem4 {
+    grid-area: 10/1/16/4;
+}
+
+.galleryItem5 {
+    grid-area: 7/4/16/7;
+}
+
+.galleryItem6 {
+    grid-area: 10/7/16/10;
+}
+
+.galleryItem7 {
+    grid-area: 16/1/25/4;
+}
+
+.galleryItem8 {
+    grid-area: 16/4/22/7;
+}
+
+.galleryItem9 {
+    grid-area: 16/7/25/10;
+}
+
+.galleryItem10 {
+    grid-area: 25/1/31/4;
+}
+
+.galleryItem11 {
+    grid-area: 22/4/31/7;
+}
+
+.galleryItem12 {
+    grid-area: 25/7/31/10;
+}
+
+footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #191818;
+    color: #0084ae;
+    font-family: "Shackleton", Arial, sans-serif;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+@media (max-width: 728px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    p {
+        font-size: 5vw;
+    }
+}

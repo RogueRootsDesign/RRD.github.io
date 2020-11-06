@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsDiceGame.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jbr3jaq.css">
+    <link rel="stylesheet" href="../rrdCSS/rrdHeaderNav.css">
+</head>
+
+<body>
+    <div class="logoflexbox">
+        <div id="logo">
+            <a href="index.html"><img class="heroLogo" src="../media/RRDlogo.svg" alt="River of Ink Logo">
+            </a>
+        </div>
+        <div class="flexname">
+            <h1 id="rogue">Rogue</h1>
+            <h1 id="roots">Roots</h1>
+            <h1 id="design">Design</h1>
+        </div>
+        <div class="clock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a id="navIcon" href="#">
+            <img src="../media/navLogo.svg" alt="">
+        </a>
+        <ul>
+            <li class="navlogo"><a href="#">RRD</a></li>
+            <li class="navbutton"><a href="../index.html">Home</a></li>
+            <li class="navbutton"><a href="../portfolio.html">Portfolio</a></li>
+            <li class="navbutton"><a href="../rrdPhotographyPages/rogueRootsPhotoHome.html">Photography</a></li>
+            <li class="navbutton"><a href="../contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div id="pageDiv">
+        <div id="dicePage">
+            <button id="diceText">
+                Click Me.
+            </button>
+            <div id="diceBox">
+                <p id="player1">Player 1</p>
+                <p id="player2">Player 2</p>
+                <div id="p1DiceBox"><img id="player1Dice" src="images/dice6.svg" alt=""></div>
+                <div id="p2DiceBox"><img id="player2Dice" src="images/dice6.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        This website was built from scratch by : &copy; 2020 Rogue Roots Design
+    </footer>
+</body>
+<script src="jsDiceGame.js"></script>
+<script src="../rrdJS/index.js"></script>
+<script src="../rrdJS/jsclock.js"></script>
+
+</html>

@@ -1,0 +1,197 @@
+/* RRD stylesheet guide
+Typefaces: Display = "Shackleton", Georgia, serif
+            Body copy = "Roboto", Arial, sans-serif
+   Color Pallette: Highlight colors = "Coral Reef" #f37158 
+                                    = "Bright Ocean" #0084ae
+                  Background colors = "Sea Shell" #f3e8d0
+                                    = "Black Sand" #191818
+*/
+
+@charset "utf-8";
+
+body {
+    border: rgba(0, 0, 0, 0) solid 0.1px;
+    background-color: #f3e8d0;
+    display: block;
+    position: relative;
+    font-family: "Roboto", Arial, sans-serif;
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#pageDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 70% 10%;
+    align-items: center;
+    justify-items: center;
+    min-height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imageGallery {
+    height: 45vw;
+    width: 45vw;
+    margin: 50px 0 70px 0;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    background-color: #191818;
+}
+
+#designPDFLink {
+    background-image: url("../media/Identity-Design-RB-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0 70px 0;
+    height: 45vw;
+    width: 45vw;
+}
+
+#drumLink {
+    background-image: url("../media/drums-600px.jpg");
+    background-size: cover;
+    border-radius: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: 2/2/5/5;
+}
+
+#threeDBoxLink {
+    background-image: url("../media/bluecrate.jpg");
+    background-size: cover;
+    border-radius: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: 4/4/7/7;
+}
+
+#mockingbirdLink {
+    background-color: lightblue;
+    background-image: url("../media/MockingbirdMedia/bird.svg");
+    background-size: contain;
+    border-radius: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: 6/6/9/9;
+}
+
+#diceGameLink {
+    background-image: url("../media/dice5.svg");
+    background-size: contain;
+    border-radius: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: 8/8/11/11;
+}
+
+.navb {
+    height: 100%;
+    width: 100%;
+}
+
+.navb a {
+    display: flex;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    border-radius: 46px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: #191818;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.navb a:hover {
+    opacity: 0.95;
+}
+
+.designNav {
+    height: 100%;
+    width: 100%;
+}
+
+.designNav a {
+    display: flex;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: #191818;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.designNav a:hover {
+    opacity: 0.95;
+}
+
+h2 {
+    grid-area: 1/1/2/3;
+    color: #191818;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-weight: bold;
+}
+
+.pageDescription {
+    color: #191818;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+footer {
+    grid-row: 4/4;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-top: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #191818;
+    color: #0084ae;
+    font-family: "Shackleton", Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    #pageDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .designNav a {
+        font-size: 3vw;
+    }
+
+    .navb a {
+        font-size: 3vw;
+    }
+
+    .imageGallery {
+        width: 100%;
+        height: 100vw;
+    }
+
+    #designPDFLink {
+        width: 100%;
+        height: 100vw;
+    }
+}

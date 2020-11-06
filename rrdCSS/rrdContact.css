@@ -1,0 +1,289 @@
+/* RRD stylesheet guide
+Typefaces: Display = "Shackleton", Georgia, serif
+            Body copy = "Roboto", Arial, sans-serif
+   Color Pallette: Highlight colors = "Coral Reef" #f37158 
+                                    = "Bright Ocean" #0084ae
+                  Background colors = "Sea Shell" #f3e8d0
+                                    = "Black Sand" #191818
+*/
+@charset "utf-8";
+
+/* Page Styles */
+
+body {
+    background-color: #f3e8d0;
+    font-size: 1em;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #191818;
+    color: #0084ae;
+    font-family: "Shackleton", Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+
+#pageDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto 70px auto;
+    transform: scale(0.98);
+    transition: transform 0.5s;
+}
+
+#innerDiv {
+    grid-column: 1/2;
+    background: #f3e8d0;
+    padding-top: 50px;
+
+}
+
+#formDiv {
+    grid-column: 2/3;
+    padding-top: 50px;
+}
+
+.sloganFlexbox {
+    font-family: "Shackleton", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.pFlexbox {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 1.5em;
+    padding: 0 15px 0 15px;
+}
+
+#lastLine {
+    font-weight: bold;
+}
+
+/* Form Styles */
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 9px 0px;
+}
+
+div.formRow>* {
+    flex: 1 1 120px;
+}
+
+form#brief {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#brief>fieldset {
+    border: none;
+    outline: none;
+    background-color: #191818;
+    border-radius: 23px;
+    flex: 1 1 280px;
+    font-size: 1.5em;
+    font-family: "Roboto", Arial, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    color: #0084ae;
+    padding: 5px;
+}
+
+.formRow p {
+    color: #0084ae;
+    align-self: center;
+}
+
+#formParagraph {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+legend {
+    background-color: #0084ae;
+    color: #191818;
+    font-size: 1.3em;
+    font-family: "Shackleton", Georgia, serif;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    background-color: #f3e8d0;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+#responseType {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+#responseType p {
+    grid-column: 1/1;
+    padding-left: 5px;
+}
+
+#responseType input[type="radio"] {
+    width: 23px;
+    height: 23px;
+    border-radius: 15px;
+    vertical-align: -5px;
+    background-color: #f37158;
+}
+
+#responseType input[type="radio"]:checked::before {
+    transform: translate(3px, 3px) scale(1);
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0.55, 2);
+}
+
+#responseType input[type="radio"]::before {
+    display: block;
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #0084ae;
+    font-size: 1.2em;
+    transform: translate(3px, 3px) scale(0);
+    transform-origin: center;
+    transition: all 0.3s ease-in;
+    margin: 2.5px 0px 0px 2.5px;
+}
+
+.checkRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-top: 1.5px solid #f3e8d0;
+    padding: 10px 0px;
+}
+
+input#needs {
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #f37158;
+    margin: 15px 10px;
+    grid-column: auto;
+}
+
+input#needs::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input#needs[type="checkbox"] {
+    position: relative;
+    border: 1px solid;
+}
+
+input#needs[type="checkbox"]::before {
+    content: "\2714";
+    font-size: 1em;
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    color: #0084ae;
+    visibility: hidden;
+}
+
+input#needs[type="checkbox"]:checked::before {
+    visibility: visible;
+}
+
+textarea {
+    width: 100%;
+    height: 140px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background-color: #f3e8d0;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#buttons input {
+    border: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    font-family: "Shackleton", Georgia, serif;
+    background-color: #0084ae;
+    color: #191818;
+    box-shadow: 2px 5px 2px#f3e8d0;
+    transition: all 0.1s linear;
+}
+
+#buttons input:hover {
+    color: #f37158;
+    background-color: #f3e8d0;
+    box-shadow: 2px 5px 2px#0084ae;
+}
+
+#buttons input:active {
+    color: #f37158;
+    background-color: #f3e8d0;
+    transform: translateY(6px);
+    box-shadow: 1px 3px 2px#0084ae;
+}
+
+/* Validation Styles */
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+    background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+    background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+@media (max-width: 700px) {
+    #pageDiv {
+        display: flex;
+        flex-direction: column;
+        font-size: .8em;
+    }
+
+    input#needs[type="checkbox"]::before {
+        right: 8px;
+        top: -4px;
+        font-size: 1.2em;
+    }
+}

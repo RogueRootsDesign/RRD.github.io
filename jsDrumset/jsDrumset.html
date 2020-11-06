@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 
+   Rogue Roots Design 
+   this is a javascript powered drum kit
+   Author: Christopher Parrish
+   Date: 01/15/2020
+   
+   Filename:assignments.html
+   -->
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Drumset</title>
+    <link rel="stylesheet" href="jsDrumset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jbr3jaq.css">
+</head>
+
+<body>
+    <div class="logoflexbox">
+        <div id="logo">
+            <a href="index.html"><img class="heroLogo" src="../media/RRDlogo.svg" alt="River of Ink Logo">
+            </a>
+        </div>
+        <div class="flexname">
+            <h1 id="rogue">Rogue</h1>
+            <h1 id="roots">Roots</h1>
+            <h1 id="design">Design</h1>
+        </div>
+        <div class="clock">
+            <div class="clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a id="navIcon" href="#">
+            <img src="../media/navLogo.svg" alt="">
+        </a>
+        <ul>
+            <li class="navlogo"><a href="#">RRD</a></li>
+            <li class="navbutton"><a href="../index.html">Home</a></li>
+            <li class="navbutton"><a href="../portfolio.html">Portfolio</a></li>
+            <li class="navbutton"><a href="../rrdPhotographyPages/rogueRootsPhotoHome.html">Photography</a></li>
+            <li class="navbutton"><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="pageDiv">
+        <div class="keys">
+            <div data-key="65" class="key">
+                <kbd>A</kbd>
+                <span class="sound">Clap</span>
+            </div>
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">Highhat</span>
+            </div>
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">kick</span>
+            </div>
+            <div data-key="70" class="key">
+                <kbd>F</kbd>
+                <span class="sound">OpenHat</span>
+            </div>
+            <div data-key="71" class="key">
+                <kbd>G</kbd>
+                <span class="sound">Boom</span>
+            </div>
+            <div data-key="72" class="key">
+                <kbd>H</kbd>
+                <span class="sound">Ride</span>
+            </div>
+            <div data-key="74" class="key">
+                <kbd>J</kbd>
+                <span class="sound">Snare</span>
+            </div>
+            <div data-key="75" class="key">
+                <kbd>K</kbd>
+                <span class="sound">Tom</span>
+            </div>
+            <div data-key="76" class="key">
+                <kbd>L</kbd>
+                <span class="sound">Tink</span>
+            </div>
+        </div>
+    </div>
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+    <script src="drumset.js"></script>
+    <footer>
+        This website was built from scratch by : &copy; 2020 Rogue Roots Design
+    </footer>
+</body>
+
+<script src="../rrdJS/index.js"></script>
+<script src="../jsclock/jsclock.js"></script>
+
+</html>

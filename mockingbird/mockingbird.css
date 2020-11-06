@@ -1,0 +1,447 @@
+/* RRD stylesheet guide
+Typefaces: Display = "Shackleton", Georgia, serif
+            Body copy = "Roboto", Arial, sans-serif
+   Color Pallette: Highlight colors = "Coral Reef" #f37158 
+                                    = "Bright Ocean" #0084ae
+                  Background colors = "Sea Shell" #f3e8d0
+                                    = "Black Sand" #191818
+*/
+
+
+body {
+    overflow-x: hidden;
+    background-color: #191818;
+}
+
+#instruction {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Roboto", Arial, sans-serif;
+    color: seashell;
+    background-color: #191818;
+    padding: 25px 25%;
+}
+
+.innerDiv {
+    display: flex;
+    padding-bottom: 3%;
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.panel {
+    position: relative;
+    background-image: url(../media/MockingbirdMedia/toKillAMockingbirdBG-01.jpg);
+    background-position: center;
+    background-size: contain;
+    width: inherit;
+    height: inherit;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-basis: 1;
+    transition:
+        font-size 0.7s cubic-bezier(.72, .19, .28, .84),
+        flex 0.7s cubic-bezier(.72, .19, .28, .84),
+        background 0.2s;
+    z-index: 0;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#panel1:hover #bird {
+    visibility: visible;
+    animation: bird 2s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes bird {
+    0% {
+        transform: rotateY(0deg);
+
+    }
+
+    25% {
+        transform: rotateY(90deg);
+
+    }
+
+    50% {
+        transform: rotateY(180deg);
+
+    }
+
+    75% {
+        transform: rotateY(270deg);
+
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+#bird {
+    position: absolute;
+    z-index: 3;
+    width: 8%;
+    left: 69%;
+    padding-top: 5%;
+    visibility: hidden;
+}
+
+
+
+.panel p {
+    color: black;
+    font-family: Georgia, serif;
+
+}
+
+.innerPanel {
+    position: relative;
+    display: block;
+    height: inherit;
+    width: 33.33%;
+    z-index: -1;
+    display: flex;
+}
+
+#innerPanel1:hover #atticus {
+    transform: translateX(0);
+}
+
+#innerPanel1:hover #dog {
+    transform: translateX(0);
+}
+
+#innerPanel1:hover #author {
+    visibility: visible;
+    transition: 1s;
+}
+
+#innerPanel2:hover #kids {
+    transform: translateX(0);
+}
+
+#innerPanel2:hover #boo {
+    transform: translateX(0);
+}
+
+#innerPanel2:hover #quote2 {
+    transform: scale(1);
+}
+
+#innerPanel1:hover #quote1 {
+    transform: scale(1);
+}
+
+#innerPanel3:hover #quote3 {
+    transform: scale(1);
+}
+
+#innerPanel3:hover #tom {
+    transform: translateX(0);
+}
+
+#innerPanel3:hover #noose {
+    opacity: 100;
+}
+
+#innerPanel3:hover #publisher {
+    opacity: 100;
+}
+
+#author {
+    display: flex;
+    position: absolute;
+    left: 270%;
+    margin-left: -77.9px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 50%;
+    visibility: collapse;
+    z-index: 3;
+    text-align: center;
+}
+
+#atticus {
+    width: 43%;
+    position: absolute;
+    top: 64%;
+    left: 17%;
+    z-index: 2;
+    transform: translateX(-500%);
+    transition: 1s;
+}
+
+#dog {
+    width: 45%;
+    position: absolute;
+    top: 82%;
+    left: 200%;
+    transform: translateX(1000%);
+    transition: 1s;
+}
+
+#kids {
+    width: 40%;
+    position: absolute;
+    top: 64%;
+    left: 110%;
+    transform: translateX(500%);
+    transition: 1s;
+}
+
+#boo {
+    width: 37%;
+    position: absolute;
+    top: 51%;
+    left: -70%;
+    transform: translateX(-500%);
+    transition: 1s;
+}
+
+#quote1 {
+    width: 350px;
+    position: absolute;
+    left: 150%;
+    margin-left: -175px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+    font-size: 1.3em;
+    padding-top: 90%;
+    transform: scale(0);
+    z-index: 4;
+    text-align: center;
+    transition: 1s;
+}
+
+#quote2 {
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+    font-size: 1.3em;
+    padding-top: 90%;
+    transform: scale(0);
+    z-index: 4;
+    text-align: center;
+    transition: 1s;
+}
+
+#quote3 {
+    width: 350px;
+    position: absolute;
+    right: 110%;
+    margin-left: -175px;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+    font-size: 1.3em;
+    padding-top: 90%;
+    transform: scale(0);
+    z-index: 4;
+    text-align: center;
+    transition: 1s;
+}
+
+#tom {
+    width: 48%;
+    position: absolute;
+    top: 77%;
+    left: -160%;
+    transform: translateX(-1000%);
+    transition: 1s;
+}
+
+#noose {
+    width: 10%;
+    position: absolute;
+    top: 39.5%;
+    right: 35%;
+    opacity: 0;
+    transition: 1s;
+}
+
+#publisher {
+    position: absolute;
+    left: -150%;
+    margin-left: -149px;
+    padding-top: 5%;
+    text-align: center;
+    opacity: 0;
+    z-index: 4;
+    text-align: center;
+    transition: 1s;
+}
+
+#publisher>img {
+    width: 250px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: #191818;
+    color: #0084ae;
+    font-family: "Shackleton", Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1700px) {
+    .innerDiv {
+        display: flex;
+        padding-bottom: 3%;
+        width: 1600px;
+        height: 1000px;
+        margin: 0 auto;
+    }
+
+    #bird {
+        position: absolute;
+        z-index: 3;
+        width: 8%;
+        left: 69%;
+        padding-top: 8%;
+        visibility: hidden;
+    }
+
+
+    #author {
+        display: flex;
+        position: absolute;
+        left: 270%;
+        margin-left: -77.9px;
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: 61%;
+        visibility: collapse;
+        z-index: 3;
+        text-align: center;
+    }
+
+    #atticus {
+        width: 43%;
+        position: absolute;
+        top: 64%;
+        left: 17%;
+        z-index: 2;
+        transform: translateX(-500%);
+        transition: 1s;
+    }
+
+    #dog {
+        width: 45%;
+        position: absolute;
+        top: 82%;
+        left: 200%;
+        transform: translateX(1000%);
+        transition: 1s;
+    }
+
+    #kids {
+        width: 40%;
+        position: absolute;
+        top: 64%;
+        left: 110%;
+        transform: translateX(500%);
+        transition: 1s;
+    }
+
+    #boo {
+        width: 34%;
+        position: absolute;
+        top: 55%;
+        left: -70%;
+        transform: translateX(-500%);
+        transition: 1s;
+    }
+
+    #quote1 {
+        width: 350px;
+        position: absolute;
+        left: 150%;
+        margin-left: -175px;
+        font-weight: bold;
+        text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+        font-size: 1.3em;
+        padding-top: 100%;
+        transform: scale(0);
+        z-index: 4;
+        text-align: center;
+        transition: 1s;
+    }
+
+    #quote2 {
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        margin-left: -175px;
+        font-weight: bold;
+        text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+        font-size: 1.3em;
+        padding-top: 100%;
+        transform: scale(0);
+        z-index: 4;
+        text-align: center;
+        transition: 1s;
+    }
+
+    #quote3 {
+        width: 350px;
+        position: absolute;
+        right: 120%;
+        margin-left: -175px;
+        font-weight: bold;
+        text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+        font-size: 1.3em;
+        padding-top: 100%;
+        transform: scale(0);
+        z-index: 4;
+        text-align: center;
+        transition: 1s;
+    }
+
+    #tom {
+        width: 49%;
+        position: absolute;
+        top: 77%;
+        left: -150%;
+        transform: translateX(-1000%);
+        transition: 1s;
+    }
+
+    #noose {
+        width: 10%;
+        position: absolute;
+        top: 41%;
+        right: 38%;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #publisher {
+        position: absolute;
+        left: -160%;
+        margin-left: -149px;
+        padding-top: 15%;
+        text-align: center;
+        opacity: 0;
+        z-index: 4;
+        text-align: center;
+        transition: 1s;
+    }
+
+}
