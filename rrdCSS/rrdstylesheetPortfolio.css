@@ -42,7 +42,7 @@ body {
 }
 
 #designPDFLink {
-    background-image: url("/media/Identity-Design-RB-01.png");
+    background-image: url("../media/Identity-Design-RB-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ body {
 }
 
 #drumLink {
-    background-image: url("/media/drums-600px.jpg");
+    background-image: url("../media/drums-600px.jpg");
     background-size: cover;
     border-radius: 46px;
     background-position: center;
@@ -61,7 +61,7 @@ body {
 }
 
 #threeDBoxLink {
-    background-image: url("/media/bluecrate.jpg");
+    background-image: url("../media/bluecrate.jpg");
     background-size: cover;
     border-radius: 46px;
     background-position: center;
@@ -71,7 +71,7 @@ body {
 
 #mockingbirdLink {
     background-color: lightblue;
-    background-image: url("/media/MockingbirdMedia/bird.svg");
+    background-image: url("../media/MockingbirdMedia/bird.svg");
     background-size: contain;
     border-radius: 46px;
     background-position: center;
@@ -80,7 +80,7 @@ body {
 }
 
 #diceGameLink {
-    background-image: url("/media/dice5.svg");
+    background-image: url("../media/dice5.svg");
     background-size: contain;
     border-radius: 46px;
     background-position: center;
