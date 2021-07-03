@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 
+Rogue Roots Design
+Landing Page
+   Author: Christopher Parrish
+   Date: 01/15/2020 
+Typefaces: 
+    Display = "Shackleton", Georgia, serif
+    Body copy = 
+        "Roboto", Arial, sans-serif
+Color Pallette: 
+    Highlight colors = 
+        "Coral Reef" #f37158 
+        "Bright Ocean" #0084ae
+    Background colors = 
+        "Sea Shell" #f3e8d0
+        "Black Sand" #191818
+   
+   
+   Filename:index.html
+   -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="photography, photograph, portrait, landscape, wedding, digital">
+    <title>Rogue Roots Photography</title>
+    <link rel="stylesheet" href="rrdCSS/rrdStylesheetIndex.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jbr3jaq.css">
+    <link rel="stylesheet" href="rrdCSS/rrdHeaderNav.css">
+    <link rel="stylesheet" href="rrdCSS/rrdContact.css">
+</head>
+
+<body>
+
+    <div class="logoflexbox">
+        <div id="logo">
+            <a href="index.html"><img class="heroLogo" src="media/RRPhoto-logo.svg" alt="Shutter Eye Logo">
+            </a>
+        </div>
+        <div class="flexname">
+            <h1 id="rogue">Rogue</h1>
+            <h1 id="roots">Roots</h1>
+            <h1 id="design">Photography</h1>
+        </div>
+    </div>
+    <nav id="navbar">
+        <a id="navIcon" href="#">
+            <img src="media/navLogo.svg" alt="">
+        </a>
+        <ul>
+            <li class="navlogo"><a href="#">RRP</a></li>
+            <li class="navbutton"><a href="index.html">Home</a></li>
+            <li class="navbutton"><a href="rogueRootsPhotoHome.html">My Work</a></li>
+            <li class="navbutton"><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section id="pageDiv">
+        <div class="photoContainer">
+            <div class="panel" id="panel1">
+                <p class="text">If A</p>
+                <p>Picture</p>
+                <p class="text">Is</p>
+
+            </div>
+            <div class="panel" id="panel2">
+                <p class="text">Worth</p>
+                <p>1000</p>
+                <p class="text">Words</p>
+            </div>
+            <div class="panel" id="panel3">
+                <p class="text">What</p>
+                <p>Stories</p>
+                <p class="text">Will Yours Tell?</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div id="CTADiv">
+            <div id="innerDiv">
+                <div class="CTA">
+                    <p id="CTA1">Hi! I'm Penny Parrish and I live for the lens</p><br>
+                    <p>Want to hire me for your next photo op?</p><br>
+                    <p>Great!</p><br>
+                    <p>Drop your contact info and I'll get back to you soon.</p>
+                </div>
+            </div>
+            <div id="formDiv">
+                <form id="brief" action="mailto:roguerootsdesign@gmail.com" method="POST" enctype="text/plain">
+                    <fieldset id="custInfo">
+                        <div class="formRow">
+                            <label for="busName">What's your name?</label>
+                            <input name="Name" id="busName" type="text" placeholder="Name" required />
+                        </div>
+                        <div class="formRow">
+                            <label for="conMail">Your e-mail?</label>
+                            <input name="businessName" id="conMail" type="text" placeholder="e-mail address" />
+                        </div>
+                        <div class="formRow">
+                            <label for="conPhone">And phone number</label>
+                            <input name="businessName" id="conPhone" type="text" placeholder="(nnn) nnn-nnnn"
+                                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                        </div>
+                        <div class="formRow" id="responseType">
+                            <p>Whats the best way to get back to you?</p>
+                            <div class="response" id="responseEmail">
+                                <label for="resEmail">e-mail</label>
+                                <input name="businessName" id="resEmail" value="Email" type="radio" />
+                            </div>
+                            <div class="response" id="responsePhone">
+                                <label for="resPhone">Phone</label>
+                                <input name="businessName" id="resPhone" value="Phone" type="radio" />
+                            </div>
+                        </div>
+                        <div id="buttons">
+                            <input type="submit" value="Submit" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    This website was designed and coded by : Christopher Parrish - 2021
+</footer>
+<script src="rrdJS/index.js"></script>
+<script src="rrdJS/panelScript.js"></script>
+
+</html>
