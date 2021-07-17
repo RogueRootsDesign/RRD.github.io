@@ -176,6 +176,10 @@ footer {
         background-attachment: scroll;
     }
 
+    footer {
+        font-size: 0.6em;
+    }
+
     .section {
         padding: 20px 0 20px 0;
     }
